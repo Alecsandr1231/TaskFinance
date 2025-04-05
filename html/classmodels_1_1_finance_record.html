@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TaskFinance: Класс models.FinanceRecord</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TaskFinance<span id="projectnumber">&#160;1</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classmodels_1_1_finance_record.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="classmodels_1_1_finance_record-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс models.FinanceRecord</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a4c7b87b7e2d712d9254e78c9c42096fa" id="r_a4c7b87b7e2d712d9254e78c9c42096fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c7b87b7e2d712d9254e78c9c42096fa">__init__</a> (self, record_id, task_id, amount, category, timestamp, currency=&quot;RUB&quot;, source=None, note=None)</td></tr>
+<tr class="separator:a4c7b87b7e2d712d9254e78c9c42096fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45dd36c97a02df92203955c0475cfb2" id="r_ae45dd36c97a02df92203955c0475cfb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae45dd36c97a02df92203955c0475cfb2">__repr__</a> (self)</td></tr>
+<tr class="separator:ae45dd36c97a02df92203955c0475cfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac780b9ad4d5df251c9293182e063d319" id="r_ac780b9ad4d5df251c9293182e063d319"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac780b9ad4d5df251c9293182e063d319">to_dict</a> (self)</td></tr>
+<tr class="separator:ac780b9ad4d5df251c9293182e063d319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:ad6370a3139f49bc3481a7a851d8d6b5b" id="r_ad6370a3139f49bc3481a7a851d8d6b5b"><td class="memItemLeft" align="right" valign="top"><a id="ad6370a3139f49bc3481a7a851d8d6b5b" name="ad6370a3139f49bc3481a7a851d8d6b5b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>record_id</b> = record_id</td></tr>
+<tr class="separator:ad6370a3139f49bc3481a7a851d8d6b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90604a9d096d11e2d206c74643b36450" id="r_a90604a9d096d11e2d206c74643b36450"><td class="memItemLeft" align="right" valign="top"><a id="a90604a9d096d11e2d206c74643b36450" name="a90604a9d096d11e2d206c74643b36450"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>task_id</b> = task_id</td></tr>
+<tr class="separator:a90604a9d096d11e2d206c74643b36450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ee5cb1a2adfe79f57129db5f3a68e7" id="r_a35ee5cb1a2adfe79f57129db5f3a68e7"><td class="memItemLeft" align="right" valign="top"><a id="a35ee5cb1a2adfe79f57129db5f3a68e7" name="a35ee5cb1a2adfe79f57129db5f3a68e7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>amount</b> = amount</td></tr>
+<tr class="separator:a35ee5cb1a2adfe79f57129db5f3a68e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35156a7535e73c2eff1c62ce7dc6996" id="r_ac35156a7535e73c2eff1c62ce7dc6996"><td class="memItemLeft" align="right" valign="top"><a id="ac35156a7535e73c2eff1c62ce7dc6996" name="ac35156a7535e73c2eff1c62ce7dc6996"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>category</b> = category</td></tr>
+<tr class="separator:ac35156a7535e73c2eff1c62ce7dc6996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24e95ca7d8e94c7644bc8a74b5d9c98" id="r_af24e95ca7d8e94c7644bc8a74b5d9c98"><td class="memItemLeft" align="right" valign="top"><a id="af24e95ca7d8e94c7644bc8a74b5d9c98" name="af24e95ca7d8e94c7644bc8a74b5d9c98"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>timestamp</b> = timestamp</td></tr>
+<tr class="separator:af24e95ca7d8e94c7644bc8a74b5d9c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd66f12c9c733d334450187a960b135b" id="r_acd66f12c9c733d334450187a960b135b"><td class="memItemLeft" align="right" valign="top"><a id="acd66f12c9c733d334450187a960b135b" name="acd66f12c9c733d334450187a960b135b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>currency</b> = currency</td></tr>
+<tr class="separator:acd66f12c9c733d334450187a960b135b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89afe564d821e3ab42aa47bf29e42fcd" id="r_a89afe564d821e3ab42aa47bf29e42fcd"><td class="memItemLeft" align="right" valign="top"><a id="a89afe564d821e3ab42aa47bf29e42fcd" name="a89afe564d821e3ab42aa47bf29e42fcd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>source</b> = source</td></tr>
+<tr class="separator:a89afe564d821e3ab42aa47bf29e42fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b73518b5fd9b83a119a57326d631a6" id="r_a75b73518b5fd9b83a119a57326d631a6"><td class="memItemLeft" align="right" valign="top"><a id="a75b73518b5fd9b83a119a57326d631a6" name="a75b73518b5fd9b83a119a57326d631a6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>note</b> = note</td></tr>
+<tr class="separator:a75b73518b5fd9b83a119a57326d631a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a4c7b87b7e2d712d9254e78c9c42096fa" name="a4c7b87b7e2d712d9254e78c9c42096fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c7b87b7e2d712d9254e78c9c42096fa">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">models.FinanceRecord.__init__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>record_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>task_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>amount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>category</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>timestamp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>currency</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;RUB&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>source</em></span><span class="paramdefsep"> = </span><span class="paramdefval">None</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>note</em></span><span class="paramdefsep"> = </span><span class="paramdefval">None</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Инициализирует новый объект финансовой записи.
+
+@param record_id: Уникальный ID записи.
+@param task_id: ID связанной задачи.
+@param amount: Сумма операции.
+@param category: Категория (например: 'Доход', 'Расход').
+@param timestamp: Время создания записи (строка в формате '%Y-%m-%d %H:%M:%S').
+@param currency: Валюта (по умолчанию 'RUB').
+@param source: Источник дохода или статьи расходов (например: 'Зарплата', 'Аренда', 'Еда').
+@param note: Комментарий к записи.
+</pre> 
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ae45dd36c97a02df92203955c0475cfb2" name="ae45dd36c97a02df92203955c0475cfb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45dd36c97a02df92203955c0475cfb2">&#9670;&#160;</a></span>__repr__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">models.FinanceRecord.__repr__ </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Возвращает строковое представление финансовой записи.
+
+@return: Строка, представляющая объект финансовой записи.
+</pre> 
+</div>
+</div>
+<a id="ac780b9ad4d5df251c9293182e063d319" name="ac780b9ad4d5df251c9293182e063d319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac780b9ad4d5df251c9293182e063d319">&#9670;&#160;</a></span>to_dict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">models.FinanceRecord.to_dict </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Возвращает словарь с данными записи (например, для экспорта).
+
+@return: Словарь с данными финансовой записи.
+</pre> 
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>task_manager/<b>models.py</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>models</b></li><li class="navelem"><a class="el" href="classmodels_1_1_finance_record.html">FinanceRecord</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
