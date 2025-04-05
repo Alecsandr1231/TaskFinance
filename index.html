@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFinance — Планировщик задач с финансами</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #ffffffcc;
+    }
+
+    header {
+      background: #1f1c2c;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #00c9ff, #92fe9d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: #92fe9d;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      padding: 140px 20px 60px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 40px;
+      backdrop-filter: blur(12px);
+      animation: slideUp 0.8s ease-in-out;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: #92fe9d;
+    }
+
+    .labs a {
+      display: block;
+      margin: 12px 0;
+      color: #00f2fe;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .labs a:hover {
+      color: #00c9ff;
+      transform: translateX(5px);
+    }
+
+    footer {
+      background: #1f1c2c;
+      padding: 30px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #92fe9d;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TaskFinance</h1>
+    <nav>
+      <a href="#about">О проекте</a>
+      <a href="#creator">Создатель</a>
+      <a href="#labs">Лабы</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>О проекте</h2>
+      <p><strong>TaskFinance</strong> — это продвинутый планировщик задач с интеграцией финансовых операций, возможностью отслеживания истории действий и аналитикой по временным отрезкам. Подходит для личного и профессионального использования.</p>
+    </section>
+
+    <section id="creator">
+      <h2>Создатель</h2>
+      <p>Автор проекта — <strong>Alecsandr1231 (Пожарицкий)</strong>.</p>
+      <p>Контакт для связи: <a href="mailto:pozharitskiy03@gmail.com">pozharitskiy03@gmail.com</a></p>
+      <p>Репозиторий: <a href="https://github.com/Alecsandr1231/TaskFinance" target="_blank">TaskFinance на GitHub</a></p>
+    </section>
+
+    <section id="labs" class="labs">
+      <h2>Лабораторные работы</h2>
+      <a href="https://github.com/Alecsandr1231/TaskFinance/raw/main/labs/Л1/Л1%20ПППИ%20Пожарицкий.docx" download>Лабораторная 1</a>
+      <a href="https://github.com/Alecsandr1231/TaskFinance/raw/main/labs/Л2/Л2%20ПППИ%20Пожарицкий.docx" download>Лабораторная 2</a>
+      <a href="https://github.com/Alecsandr1231/TaskFinance/raw/main/labs/Л3/Л3%20ПППИ%20Пожарицкий.docx" download>Лабораторная 3</a>
+      <a href="https://github.com/Alecsandr1231/TaskFinance/raw/main/labs/Л4/Л4%20ПППИ%20Пожарицкий.docx" download>Лабораторная 4</a>
+      <a href="https://github.com/Alecsandr1231/TaskFinance/raw/main/labs/Л5/Л5%20ПППИ%20Пожарицкий.docx" download>Лабораторная 5</a>
+      <a href="https://github.com/Alecsandr1231/TaskFinance/raw/main/labs/Л5/documentation/TaskFinance%20doc.chm" download>Документация (.chm)</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TaskFinance | <a href="mailto:pozharitskiy03@gmail.com">pozharitskiy03@gmail.com</a></p>
+  </footer>
+</body>
+</html>
