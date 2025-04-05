@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация TaskManager</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключите свой CSS файл, если необходимо -->
+</head>
+<body>
+    <header>
+        <h1>Документация TaskManager</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Обзор</h2>
+            <p>Класс <strong>TaskManager</strong> отвечает за управление задачами в приложении TaskFinance. Он предоставляет методы для создания, редактирования, удаления и получения задач.</p>
+        </section>
+
+        <section>
+            <h2>Методы</h2>
+            <h3>create_task(title, description)</h3>
+            <p>Создает новую задачу.</p>
+            <ul>
+                <li><strong>Параметры:</strong></li>
+                <ul>
+                    <li><code>title</code>: Заголовок задачи.</li>
+                    <li><code>description</code>: Описание задачи.</li>
+                </ul>
+                <li><strong>Возвращает:</strong> Идентификатор созданной задачи.</li>
+            </ul>
+
+            <h3>get_all_tasks()</h3>
+            <p>Возвращает список всех задач.</p>
+            <ul>
+                <li><strong>Возвращает:</strong> Список всех задач.</li>
+            </ul>
+
+            <h3>update_task(task_id, new_status)</h3>
+            <p>Обновляет статус существующей задачи.</p>
+            <ul>
+                <li><strong>Параметры:</strong></li>
+                <ul>
+                    <li><code>task_id</code>: Идентификатор задачи, статус которой нужно обновить.</li>
+                    <li><code>new_status</code>: Новый статус задачи.</li>
+                </ul>
+            </ul>
+
+            <h3>delete_task(task_id)</h3>
+            <p>Удаляет задачу по указанному идентификатору.</p>
+            <ul>
+                <li><strong>Параметры:</strong></li>
+                <ul>
+                    <li><code>task_id</code>: Идентификатор задачи, которую нужно удалить.</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Пример использования</h2>
+            <pre><code>
+# Пример создания новой задачи
+task_id = TaskManager.create_task(title='Новая задача', description='Описание новой задачи')
+
+# Получение всех задач
+tasks = TaskManager.get_all_tasks()
+
+# Обновление статуса задачи
+TaskManager.update_task(task_id=task_id, new_status='выполнено')
+
+# Удаление задачи
+TaskManager.delete_task(task_id=task_id)
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Дополнительная информация</h2>
+            <p>Для получения дополнительной информации о классе TaskManager и его методах, пожалуйста, обратитесь к исходному коду или создайте issue в репозитории на GitHub.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 TaskFinance. Все права защищены.</p>
+    </footer>
+</body>
+</html>

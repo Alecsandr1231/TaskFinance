@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Acirc;&acirc;&aring;&auml;&aring;&iacute;&egrave;&aring;">
+		<param name="Local" value="HTML\index.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&Egrave;&iacute;&ntilde;&ograve;&eth;&oacute;&ecirc;&ouml;&egrave;&egrave; &iuml;&icirc; &iacute;&agrave;&divide;&agrave;&euml;&oacute; &eth;&agrave;&aacute;&icirc;&ograve;&ucirc;">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Egrave;&iacute;&ntilde;&ograve;&eth;&oacute;&ecirc;&ouml;&egrave;&yuml; &iuml;&icirc; &oacute;&ntilde;&ograve;&agrave;&iacute;&icirc;&acirc;&ecirc;&aring;">
+			<param name="Local" value="HTML\getting_started\installation.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="&Egrave;&iacute;&ntilde;&ograve;&eth;&oacute;&ecirc;&ouml;&egrave;&yuml; &iuml;&icirc; &egrave;&ntilde;&iuml;&icirc;&euml;&uuml;&ccedil;&icirc;&acirc;&agrave;&iacute;&egrave;&thorn;">
+			<param name="Local" value="HTML\getting_started\usage.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="API &auml;&icirc;&ecirc;&oacute;&igrave;&aring;&iacute;&ograve;&agrave;&ouml;&egrave;&yuml;">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FinanceController">
+			<param name="Local" value="HTML\api_reference\finance_controller.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="HistoryTracker">
+			<param name="Local" value="HTML\api_reference\history_tracker.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="TaskManager">
+			<param name="Local" value="HTML\api_reference\task_manager.html">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация HistoryTracker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключите свой CSS файл, если необходимо -->
+</head>
+<body>
+    <header>
+        <h1>Документация HistoryTracker</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Обзор</h2>
+            <p>Класс <strong>HistoryTracker</strong> отвечает за отслеживание и хранение истории действий пользователей в приложении TaskFinance. Он позволяет добавлять записи истории и получать их с возможностью фильтрации по дате.</p>
+        </section>
+
+        <section>
+            <h2>Методы</h2>
+            <h3>add_record(task_id, action)</h3>
+            <p>Добавляет новую запись истории действий.</p>
+            <ul>
+                <li><strong>Параметры:</strong></li>
+                <ul>
+                    <li><code>task_id</code>: Идентификатор задачи, с которой связана запись.</li>
+                    <li><code>action</code>: Описание действия, которое было выполнено.</li>
+                </ul>
+            </ul>
+
+            <h3>get_records(start_date=None, end_date=None)</h3>
+            <p>Возвращает список записей истории действий с возможностью фильтрации по дате.</p>
+            <ul>
+                <li><strong>Параметры:</strong></li>
+                <ul>
+                    <li><code>start_date</code>: (необязательный) Начальная дата для фильтрации.</li>
+                    <li><code>end_date</code>: (необязательный) Конечная дата для фильтрации.</li>
+                </ul>
+                <li><strong>Возвращает:</strong> Список записей истории действий, отфильтрованных по дате.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Пример использования</h2>
+            <pre><code>
+# Пример добавления записи истории
+HistoryTracker.add_record(task_id=1, action='Задача создана')
+
+# Получение всех записей истории
+records = HistoryTracker.get_records()
+
+# Получение записей за определенный период
+filtered_records = HistoryTracker.get_records(start_date='2023-01-01 00:00:00', end_date='2023-12-31 23:59:59')
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Дополнительная информация</h2>
+            <p>Для получения дополнительной информации о классе HistoryTracker и его методах, пожалуйста, обратитесь к исходному коду или создайте issue в репозитории на GitHub.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 TaskFinance. Все права защищены.</p>
+    </footer>
+</body>
+</html>
