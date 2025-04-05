@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация FinanceController</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключите свой CSS файл, если необходимо -->
+</head>
+<body>
+    <header>
+        <h1>Документация FinanceController</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Обзор</h2>
+            <p>Класс <strong>FinanceController</strong> отвечает за управление финансовыми записями в приложении TaskFinance. Он предоставляет методы для добавления записей, получения всех записей, вычисления сумм по категориям и получения текущего баланса.</p>
+        </section>
+
+        <section>
+            <h2>Методы</h2>
+            <h3>add_record(task_id, amount, category)</h3>
+            <p>Добавляет новую финансовую запись, связанную с задачей.</p>
+            <ul>
+                <li><strong>Параметры:</strong></li>
+                <ul>
+                    <li><code>task_id</code>: Идентификатор задачи, с которой связана запись.</li>
+                    <li><code>amount</code>: Сумма финансовой операции.</li>
+                    <li><code>category</code>: Категория финансовой операции (например, "Доход" или "Расход").</li>
+                </ul>
+            </ul>
+
+            <h3>get_all_records()</h3>
+            <p>Возвращает список всех финансовых записей.</p>
+            <ul>
+                <li><strong>Возвращает:</strong> Список всех финансовых записей.</li>
+            </ul>
+
+            <h3>get_total_by_category(category)</h3>
+            <p>Возвращает сумму всех операций в указанной категории.</p>
+            <ul>
+                <li><strong>Параметры:</strong></li>
+                <ul>
+                    <li><code>category</code>: Категория для фильтрации (например, "Доход" или "Расход").</li>
+                </ul>
+                <li><strong>Возвращает:</strong> Сумму всех операций в указанной категории.</li>
+            </ul>
+
+            <h3>get_balance()</h3>
+            <p>Возвращает текущий баланс (Доход - Расход).</p>
+            <ul>
+                <li><strong>Возвращает:</strong> Текущий баланс.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Пример использования</h2>
+            <pre><code>
+# Пример добавления финансовой записи
+FinanceController.add_record(task_id=1, amount=1000, category='Доход')
+
+# Получение всех записей
+records = FinanceController.get_all_records()
+
+# Получение суммы расходов
+total_expense = FinanceController.get_total_by_category('Расход')
+
+# Получение текущего баланса
+current_balance = FinanceController.get_balance()
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Дополнительная информация</h2>
+            <p>Для получения дополнительной информации о классе FinanceController и его методах, пожалуйста, обратитесь к исходному коду или создайте issue в репозитории на GitHub.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 TaskFinance. Все права защищены.</p>
+    </footer>
+</body>
+</html>
