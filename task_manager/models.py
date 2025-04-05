@@ -1,14 +1,16 @@
 class FinanceRecord:
     def __init__(self, record_id, task_id, amount, category, timestamp, currency="RUB", source=None, note=None):
         """
-        :param record_id: Уникальный ID записи
-        :param task_id: ID связанной задачи
-        :param amount: Сумма операции
-        :param category: Категория (например: 'Доход', 'Расход')
-        :param timestamp: Время создания записи (строка в формате '%Y-%m-%d %H:%M:%S')
-        :param currency: Валюта (по умолчанию 'RUB')
-        :param source: Источник дохода или статьи расходов (например: 'Зарплата', 'Аренда', 'Еда')
-        :param note: Комментарий к записи
+        Инициализирует новый объект финансовой записи.
+
+        @param record_id: Уникальный ID записи.
+        @param task_id: ID связанной задачи.
+        @param amount: Сумма операции.
+        @param category: Категория (например: 'Доход', 'Расход').
+        @param timestamp: Время создания записи (строка в формате '%Y-%m-%d %H:%M:%S').
+        @param currency: Валюта (по умолчанию 'RUB').
+        @param source: Источник дохода или статьи расходов (например: 'Зарплата', 'Аренда', 'Еда').
+        @param note: Комментарий к записи.
         """
         self.record_id = record_id
         self.task_id = task_id
@@ -20,12 +22,21 @@ class FinanceRecord:
         self.note = note
 
     def __repr__(self):
+        """
+        Возвращает строковое представление финансовой записи.
+
+        @return: Строка, представляющая объект финансовой записи.
+        """
         return (f"FinanceRecord(ID={self.record_id}, Task={self.task_id}, "
                 f"{self.amount} {self.currency} [{self.category}] @ {self.timestamp}, "
                 f"Source='{self.source}', Note='{self.note}')")
 
     def to_dict(self):
-        """Возвращает словарь с данными записи (например, для экспорта)."""
+        """
+        Возвращает словарь с данными записи (например, для экспорта).
+
+        @return: Словарь с данными финансовой записи.
+        """
         return {
             "record_id": self.record_id,
             "task_id": self.task_id,
